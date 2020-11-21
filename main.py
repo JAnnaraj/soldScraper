@@ -1,4 +1,3 @@
-import lxml
 from bs4 import BeautifulSoup
 import requests
 
@@ -10,7 +9,17 @@ results = soup.find_all('span',class_ = 'bold bidsold')
 
 #parser(s)
 
+i = 1
+while i <= 5:
+    print(results[i])
+    i += 1
 
-for x in range(0,2):
-  for result in results:
-    print(result.prettify())
+# for result in results:
+#   if x < 3:
+#     print(result.prettify())
+#     x += 1
+
+# i = 1
+# while i <= 100:
+#     print("Today is Sunday")
+#     i += 1
